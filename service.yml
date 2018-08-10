@@ -11,5 +11,3 @@ spec:
     name: serving
   - port: 9300
     name: node-to-node
-selector:
-  service: elasticsearch
