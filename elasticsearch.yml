@@ -68,5 +68,4 @@ spec:
           mountPath: /usr/share/elasticsearch/data
       volumes:
       - name: task-pv-storage
-        persistentVolumeClaim:
-          claimName: task-pv-claim
+        emptyDir: {}
