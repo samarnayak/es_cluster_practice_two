@@ -61,8 +61,8 @@ spec:
                 fieldPath: metadata.name
           - name: discovery.zen.ping.unicast.hosts
             value: "elasticsearch-0.es.default.svc.cluster.local,elasticsearch-1.es.default.svc.cluster.local,elasticsearch-2.es.default.svc.cluster.local,elasticsearch-3.es.default.svc.cluster.local,elasticsearch-4.es.default.svc.cluster.local"
-           - name: ES_JAVA_OPTS
-             value: -Xms256m -Xmx256m
+          - name: ES_JAVA_OPTS
+            value: -Xms256m -Xmx256m
         volumeMounts:
         - name: task-pv-storage
           mountPath: /usr/share/elasticsearch/data
